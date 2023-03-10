@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Time Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link href="/css/calc.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="_container">
+      <div class="content">
+        <h1 class="content-title">
+          Time <br />
+          Calculator<span class="content-title__point">.</span>
+        </h1>
+        <div class="content-dates">
+          <div class="content-dates__date">
+            <label class="label-time" for="date-1">Start Date</label>
+            <input type="date" id="date-1" />
+          </div>
+          <div class="content-dates__date">
+            <label class="label-time" for="date-2">End Date</label>
+            <input type="date" id="date-2" disabled />
+          </div>
+        </div>
+        <div class="content-timeperiod">
+          <button class="content-timeperiod__button" disabled id="next-week">
+            next week
+          </button>
+          <button class="content-timeperiod__button" disabled id="next-month">
+            next month
+          </button>
+        </div>
+        <div class="content-options">
+          <div class="content-options__title">Choose if you want</div>
+
+          <div class="content-days-options">
+            <div class="content-days-options__option days-option">
+              <input
+                type="radio"
+                id="all"
+                name="days-options"
+                class="radio-input"
+                checked
+                value="all-days"
+              />
+              <label for="all">All days</label>
+            </div>
+            <div class="content-days-options__option days-option">
+              <input
+                type="radio"
+                id="work"
+                name="days-options"
+                class="radio-input"
+                value="work"
+              />
+              <label for="work">Working days</label>
+            </div>
+            <div class="content-days-options__option days-option">
+              <input
+                type="radio"
+                id="weekends"
+                name="days-options"
+                class="radio-input"
+                value="weekends"
+              />
+              <label for="weekends">Weekends</label>
+            </div>
+          </div>
+          <div class="content-time-options">
+            <div class="content-time-options__option time-option">
+              <input
+                type="radio"
+                id="day"
+                value="day"
+                name="time-options"
+                class="radio-input"
+                checked
+              />
+              <label for="day">Days</label>
+            </div>
+            <div class="content-time-options__option time-option">
+              <input
+                type="radio"
+                id="hour"
+                name="time-options"
+                value="hour"
+                class="radio-input"
+              />
+              <label for="hour">Hours</label>
+            </div>
+            <div class="content-time-options__option time-option">
+              <input
+                type="radio"
+                id="minute"
+                value="minute"
+                name="time-options"
+                class="radio-input"
+              />
+              <label for="minute">Minutes</label>
+            </div>
+            <div class="content-time-options__option time-option">
+              <input
+                type="radio"
+                id="second"
+                value="second"
+                name="time-options"
+                class="radio-input"
+              />
+              <label for="second">Seconds</label>
+            </div>
+          </div>
+        </div>
+        <button id="submit" type="submit" disabled class="button">
+          Submit
+        </button>
+        <div class="content-output" id="output">
+          Select the dates to get started
+        </div>
+        <div class="content-history">
+          <div class="content-history__title">Last operations</div>
+          <div class="content-history__element" id="history"></div>
+        </div>
+      </div>
+    </div>
+    <div class="decor-line__black">
+      03.Feb.2021.Oct.21.Jun.1998.04.May.2023.13.Jan.1990.2011.Now.04.2004.Apr.15.Sep.Dec.2014.1987.Aug.Jul.09.03.Feb.2021.Oct.21.Jun.1998.04.May.2023.13.Jan.1990.2011.Now.04.2004.Apr.15.Sep.Dec.2014.1987.Aug.Jul.09.03.Feb.2021.Oct.21.Jun.1998.04.May.2023.13.Jan.1990.2011.Now.04.2004.Apr.15.Sep.Dec.2014.1987.Aug.Jul.09.03.Feb.2021.Oct.21.Jun.1998.04.May.2023.13.Jan.1990.2011.Now.04.2004.Apr.15.Sep.Dec.2014.1987.Aug.Jul.09.03.Feb.2021.Oct.21.Jun.1998.04.May.2023.13.Jan.1990.2011.Now.04.2004.Apr.15.Sep.Dec.2014.1987.Aug.Jul.09.03.Feb.2021.Oct.21.Jun.1998.04.May.2023.13.Jan.1990.2011.Now.04.2004.Apr.15.Sep.Dec.2014.1987.Aug.Jul.09.03.Feb.2021.Oct.21.Jun.1998.04.May.2023.13.Jan.1990.2011.Now.04.2004.Apr.15.Sep.Dec.2014.1987.Aug.Jul.09.03.Feb.2021.Oct.21.Jun.1998.04.May.2023.13.Jan.1990.2011.Now.04.2004.Apr.15.Sep.Dec.2014.1987.Aug.Jul.09.
+    </div>
+    <div class="decor-line__green">
+      03.Feb.2021.Oct.21.Jun.1998.04.May.2023.13.Jan.1990.2011.Now.04.2004.Apr.15.Sep.Dec.2014.1987.Aug.Jul.09.03.Feb.2021.Oct.21.Jun.1998.04.May.2023.13.Jan.1990.2011.Now.04.2004.Apr.15.Sep.Dec.2014.1987.Aug.Jul.09.03.Feb.2021.Oct.21.Jun.1998.04.May.2023.13.Jan.1990.2011.Now.04.2004.Apr.15.Sep.Dec.2014.1987.Aug.Jul.09.03.Feb.2021.Oct.21.Jun.1998.04.May.2023.13.Jan.1990.2011.Now.04.2004.Apr.15.Sep.Dec.2014.1987.Aug.Jul.09.03.Feb.2021.Oct.21.Jun.1998.04.May.2023.13.Jan.1990.2011.Now.04.2004.Apr.15.Sep.Dec.2014.1987.Aug.Jul.09.03.Feb.2021.Oct.21.Jun.1998.04.May.2023.13.Jan.1990.2011.Now.04.2004.Apr.15.Sep.Dec.2014.1987.Aug.Jul.09.03.Feb.2021.Oct.21.Jun.1998.04.May.2023.13.Jan.1990.2011.Now.04.2004.Apr.15.Sep.Dec.2014.1987.Aug.Jul.09.03.Feb.2021.Oct.21.Jun.1998.04.May.2023.13.Jan.1990.2011.Now.04.2004.Apr.15.Sep.Dec.2014.1987.Aug.Jul.09.
+    </div>
+
+    <script src="/js/calc.js"></script>
+  </body>
+</html>

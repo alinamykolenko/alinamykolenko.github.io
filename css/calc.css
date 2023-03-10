@@ -1,0 +1,254 @@
+@import url(/css/style.css);
+
+._container {
+  height: 100%;
+  margin: 0 200px;
+  display: flex;
+  margin-top: 200px;
+  margin-bottom: 50px;
+}
+
+.content {
+  width: 100%;
+}
+
+h1 {
+  font-family: "Krona One";
+  font-size: 40px;
+  line-height: 100%;
+  letter-spacing: -0.105em;
+}
+.content-title__point {
+  text-shadow: 2px 2px 0px greenyellow;
+}
+
+.content-title {
+  margin-bottom: 100px;
+}
+
+.content-dates {
+  display: flex;
+  gap: 50px;
+  margin-bottom: 20px;
+}
+
+.label-time {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+input[type="date"] {
+  font-size: 18px;
+  border: 1px solid #000;
+  padding: 10px 20px;
+  border-radius: 3px;
+}
+
+button {
+  font-family: "Montserrat";
+  display: block;
+  background-color: greenyellow;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.button {
+  margin-bottom: 50px;
+  font-weight: 500;
+  font-size: 18px;
+  padding: 15px 70px;
+}
+
+#output span {
+  font-size: 22px;
+  font-weight: 500;
+  background-color: greenyellow;
+}
+
+.content-options {
+  margin-bottom: 50px;
+}
+.content-time-options {
+  display: flex;
+  font-size: 16px;
+}
+
+.content-options__title {
+  margin-bottom: 30px;
+  font-weight: 500;
+}
+
+.time-option {
+  display: flex;
+  align-items: center;
+}
+.time-option:not(:last-child) {
+  margin-right: 20px;
+}
+.radio-input {
+  appearance: none;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #000;
+  margin-right: 5px;
+}
+.radio-input:checked {
+  border: 5px solid #000;
+}
+
+.content-days-options {
+  display: flex;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.days-option {
+  display: flex;
+  align-items: center;
+}
+.days-option:not(:last-child) {
+  margin-right: 20px;
+}
+
+.decor-line__green {
+  position: absolute;
+  top: 50px;
+  color: #000;
+  background-color: greenyellow;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: green-line 60s infinite linear;
+  z-index: -50;
+}
+
+@keyframes green-line {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.decor-line__black {
+  position: absolute;
+  top: 60px;
+  color: greenyellow;
+  background-color: #000;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: black-line 60s infinite linear;
+  z-index: -49;
+}
+
+@keyframes black-line {
+  0% {
+    transform: translateX(-50%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.content-timeperiod {
+  display: flex;
+  margin-bottom: 50px;
+  font-size: 16px;
+}
+
+.content-timeperiod__button {
+  display: flex;
+  font-weight: 500;
+  font-size: 12px;
+  padding: 10px 20px;
+}
+.content-timeperiod__button:not(:last-child) {
+  margin-right: 15px;
+}
+
+.content-output {
+  margin-bottom: 50px;
+}
+
+.content-history__title {
+  margin-bottom: 30px;
+  font-weight: 500;
+}
+.content-history__element:not(:last-child) {
+  margin-bottom: 20px;
+}
+.content-history__element > div {
+  margin-bottom: 15px;
+}
+
+@media screen and (max-width: 1024px) {
+  ._container {
+    margin: 0 100px;
+    margin-top: 150px;
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  ._container {
+    margin: 0 60px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+  }
+  .content-title {
+    margin-bottom: 60px;
+  }
+  .content-dates {
+    flex-wrap: wrap;
+  }
+  .decor-line__green {
+    top: 20px;
+  }
+  .decor-line__black {
+    top: 30px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .content-title {
+    font-size: 35px;
+  }
+  #date-1 {
+    width: 100%;
+  }
+  #date-2 {
+    width: 100%;
+  }
+  .content-dates__date {
+    width: 100%;
+  }
+  .button {
+    width: 100%;
+  }
+  ._container {
+    margin: 0 30px;
+    margin-top: 80px;
+    margin-bottom: 30px;
+  }
+  .content-days-options {
+    display: block;
+    margin-bottom: 30px;
+  }
+  .content-time-options {
+    display: block;
+  }
+  .days-option {
+    margin-bottom: 20px;
+  }
+  .time-option {
+    margin-bottom: 20px;
+  }
+  .content-timeperiod__button {
+    width: 50%;
+    display: block;
+  }
+}
